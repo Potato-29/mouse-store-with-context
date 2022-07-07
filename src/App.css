@@ -8,7 +8,7 @@
 
 .navbar{
   /* position: fixed; */
-  background-color: rgb(74, 74, 74);
+  background-color: rgb(40, 144, 204);
   color: white;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@ h2{
 
 .cartbtn:hover{
   background-color: white;
-  color: black;
+  color: rgb(40, 144, 204);
   transition: all 0.4s;
 }
 
@@ -73,14 +73,18 @@ img {
   border: 0;
   margin: 1rem 1rem 0 0;
   padding: 1rem;
-  background-color: rgb(113, 113, 113);
+  background-color: rgb(40, 144, 204);
   color: white;
   transition: all 0.4s;
   border-radius: 12px;
 }
 
 .addBtn:hover{
-  background-color: black;
+  background-color: rgb(32, 122, 174);
+  transition: all 0.4s;
+}
+.addBtn:active{
+  transform: scale(0.9);
   transition: all 0.4s;
 }
 

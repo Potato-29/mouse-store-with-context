@@ -29,6 +29,7 @@ h2{
   background-color: transparent;
   color: white;
   transition: all 0.4s;
+  border-radius: 12px;
 }
 
 .cartbtn:hover{
@@ -39,17 +40,28 @@ h2{
 
 
 .products{
+  width: auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 3rem;
   margin-left: 5rem;
+  
 }
 
 .product{
   padding: 1rem;
   margin: 1rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+border-radius: 20px;
+}
+
+.productCard__img{
+  display: flex;
+  justify-content: center;
 }
 
 img {
@@ -64,6 +76,7 @@ img {
   background-color: rgb(113, 113, 113);
   color: white;
   transition: all 0.4s;
+  border-radius: 12px;
 }
 
 .addBtn:hover{
@@ -130,4 +143,42 @@ img {
 .CartItem__button:focus,
 .CartItem__button:active {
   outline: none;
+}
+
+	
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+  .products {
+    flex-direction: column;
+    margin: 3rem;
+  }
+}
+ 
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .products{
+    flex-direction: column;
+  }
+}
+ 
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  .products{
+    flex-direction: column;
+  }
+}
+ 
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  .products{
+    flex-direction: column;
+    
+  }
+}
+ 
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .products{
+    flex-direction: row;
+  }
 }

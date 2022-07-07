@@ -6,8 +6,8 @@ const ProductCard = ({product}) => {
     const { addToCart } = useContext(CartContext)
     return (  
         <div className="product">
-            <div className="">
-                <img className="productCard__img" src={product.image} alt="" id="gpro"/>
+            <div className="productCard">
+                <div className="productCard__img"><img className="" src={product.image} alt="" id="gpro"/></div>
                 <h3>{product.name}</h3>
                 <div className="productCard__price">
                     {product.price}

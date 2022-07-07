@@ -15,9 +15,9 @@ const Cart = () => {
                 <div className="cart__innerWrapper">
                     {cartItems.length === 0 ? (<h4>Empty!</h4>) : (
                         <ul>
-                            {cartItems.map((item) => {
+                            {cartItems.map((item) => (
                                 <CartItem key={item._id} item={item}/>
-                            })}
+                            ))}
                         </ul>
                     )}
                 </div>
